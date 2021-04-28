@@ -1,1 +1,95 @@
-/* Other rules */
+* {
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20vw;
+  margin-top: 150px;
+  font-family: "Montserrat", sans-serif;
+  min-width: 900px;
+}
+
+.container2 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-width: 286px;
+  min-height: 300px;
+}
+
+.container2 button {
+  margin-right: 20px;
+
+  border-radius: 10px;
+  font-size: 36px;
+  line-height: 50px;
+  padding: 10px;
+  width: 120px;
+  height: 70px;
+}
+
+.announcement {
+  border-radius: 10px;
+  min-width: 250px;
+  min-height: 145px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 36px;
+  line-height: 50px;
+  padding: 10px 50px;
+  width: 130px;
+  height: 70px;
+  color: white;
+  background-color: #5c48d3;
+  border: none;
+}
+
+@media (max-width: 1024px) {
+  .container1 {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    margin-top: 50px;
+  }
+  .container2 {
+    margin: 20px 0;
+  }
+  .announcement {
+    border-radius: 10px;
+    min-width: 250px;
+    min-height: 145px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container2 button {
+    margin: 10px;
+
+    border-radius: 10px;
+    font-size: 36px;
+    line-height: 50px;
+    padding: 10px;
+    width: 120px;
+    height: 70px;
+  }
+}
